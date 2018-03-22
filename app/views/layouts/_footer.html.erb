@@ -5,8 +5,8 @@
   </small>
   <nav>
     <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
+      <li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
+      <li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
       <li><a href="https://news.google.com/news/?ned=us&gl=US&hl=en", target="_blank">News</a></li>
     </ul>
   </nav>
